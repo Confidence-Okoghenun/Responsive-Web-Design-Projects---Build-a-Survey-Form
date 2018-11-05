@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  background: rgba(0, 255, 76, 0.719);
+}
+
+.container {
+  width: 50%;
+  min-width: 250px;
+  margin: 30px auto;
+  background: white;
+  text-align: center;
+  padding: 30px 15px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+.container textarea,
+.container .helper,
+.container .group {
+  margin: 15px auto;
+  max-width: 300px;
+}
+.container .group {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.container .group.fill {
+  justify-content: space-between;
+}
+.container .group.fill input,
+.container .group.fill select {
+  width: 60%;
+  border-radius: 4px;
+  padding: 5px 10px;
+  border: 1px solid black;
+}
+.container .group.fill select {
+  width: 67%;
+  background: white;
+}
+.container .group.tick {
+  justify-content: flex-start;
+  margin: 5px auto 15px;
+}
+.container .group.tick label {
+  padding-right: 20px;
+}
+.container .helper {
+  text-align: left;
+  margin-bottom: 0;
+}
+.container textarea {
+  width: 60%;
+  max-width: 240px;
+  padding: 20px 30px;
+  border-radius: 6px;
+  border: 1px solid black;
+}
+.container button {
+  width: 60%;
+  padding: 5px;
+  margin: 0 auto;
+  display: block;
+  max-width: 300px;
+  background: white;
+  border-radius: 6px;
+  border: 1px solid black;
+}
+
+/*# sourceMappingURL=main.css.map */

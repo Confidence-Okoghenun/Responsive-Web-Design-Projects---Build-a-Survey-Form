@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="stylesheets/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">A form that was built to help companies take short surveys.</p>
+        <form id="survey-form">
+            <div class="group fill">
+                <label for="name" id="name-label">Name</label>
+                <input required type="text" name="" id="name" placeholder="John Doe">
+            </div>
+            <div class="group fill">
+
+                <label for="email" id="email-label">Email</label>
+                <input required type="email" name="" id="email" placeholder="you@example.com">
+            </div>
+            <div class="group fill">
+
+                <label for="number" id="number-label">Age</label>
+                <input required type="number" name="" id="number" placeholder="99" min="0" max="100">
+            </div>
+            <div class="group fill">
+                <label for="dropdown">Sex</label>
+                <select name="" id="dropdown">
+                    <option value="">Sex</option>
+                    <option value="">Male</option>
+                    <option value="">Female</option>
+                </select>
+            </div>
+            <div class="helper">Prefered Card</div>
+            <div class="group tick">
+                <input type="radio" value="visacard" name="payment" id="visacard">
+                <label for="visacard">Visa card</label>
+                <input type="radio" value="mastercard" name="payment" id="mastercard">
+                <label for="mastercard">Master card</label>
+            </div>
+            <div class="helper">Rate survey</div>
+            <div class="group tick">
+                <input type="checkbox" name="" value="like" id="like">
+                <label for="like">Enjoyed survey</label>
+                <input type="checkbox" name="" value="dislike" id="dislike">
+                <label for="dislike">Disliked survey</label>
+            </div>
+            <textarea name="" id="" placeholder="Please leave additional comments"></textarea>
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js
+    "></script>
+    <script>
+        document.querySelector('button').addEventListener('click', (e) => {
+            e.preventDefault();
+            document.querySelector('.container').innerHTML = '<h2>Thank you for taking the survey</h2>'
+        })
+    </script>
+</body>
+
+</html>
